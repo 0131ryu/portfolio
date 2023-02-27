@@ -14,6 +14,9 @@ module.exports = {
         "light-beige": "#EEE9DA",
         "dark-red": "#AA5656",
       },
+      fontFamily: {
+        sans: ["Source Sans Pro"],
+      },
     },
   },
   plugins: [],
