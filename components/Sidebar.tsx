@@ -15,7 +15,7 @@ const Sidebar = () => {
         <div>
             <img src="https://user-images.githubusercontent.com/89256977/221572909-d8cad08b-843b-43bb-9491-51dad05f1888.jpg"
              alt="profileImg"
-             className="w-40 h-40 mx-auto rounded-full"/>
+             className="w-40 mx-auto rounded-full h-44"/>
 
         <h3 className="my-4 font-sans text-3xl font-medium">
             류지혜</h3>
