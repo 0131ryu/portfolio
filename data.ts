@@ -1,5 +1,5 @@
 
-import { IService, ISkill } from "./type"
+import { IProject, IService, ISkill } from "./type"
 import { RiComputerLine, RiComputerFill, RiStickyNoteLine } from "react-icons/ri"
 import { MdSocialDistance, MdFolder } from 'react-icons/md'
 import { IoLogoJavascript } from "react-icons/io"
@@ -79,4 +79,73 @@ export const tools:ISkill[] = [
         level: '70%',
         Icon: IoRadioButtonOffOutline
     },
+]
+
+export const projects:IProject[] = [
+    {
+        id: 0,
+        name: "engWord 단어장 v.3",
+        description:
+          "단어장, sns, game이 가능한 웹 페이지",
+        image_path: "/images/engWord_next.png",
+        deployed_url: "https://engword.shop/",
+        github_url: "https://github.com/0131ryu/engWord_next",
+        category: ["react", "Node.js", "OpenApi"],
+        key_techs: ["React", "Next.js","Node.js", "Mysql", "OpenApi", "Chart.js", "Tailwindcss"],
+    },
+    {
+        id: 1,
+        name: "engWord 단어장 v.2",
+        description:
+          "단어장 v.1 기능 및 로그인 보완, sns 기능 추가",
+        image_path: "/images/engword_v.2.png",
+        deployed_url: "https://ba-gotocode131.tistory.com/201",
+        github_url: "https://github.com/0131ryu/engWord",
+        category: ["react", "Node.js"],
+        key_techs: ["React", "Node.js", "Mysql"],
+    },
+    {
+        id: 2,
+        name: "engWord 단어장 v.1",
+        description:
+          "회원가입 및 로그인, 단어 CRUD",
+        image_path: "/images/engword_v.1.png",
+        deployed_url: "https://ba-gotocode131.tistory.com/188",
+        github_url: "https://ba-gotocode131.tistory.com/188",
+        category: ["react", "Node.js"],
+        key_techs: ["React", "Node.js", "Mysql"],
+    },
+    {
+        id: 3,
+        name: "일정관리",
+        description:
+          "todo를 활용한 일정관리",
+        image_path: "/images/schedule_project.png",
+        deployed_url: "https://ba-gotocode131.tistory.com/158",
+        github_url: "https://github.com/0131ryu/schedule-management",
+        category: ["react", "Node.js"],
+        key_techs: ["Html", "CSS", "Javascript","Node.js"],
+    },
+    {
+        id: 4,
+        name: "10개의 랜덤한 문제 풀기 게임",
+        description:
+          "opentrivia API 이용한 게임",
+        image_path: "/images/quiz_vue.png",
+        deployed_url: "",
+        github_url: "https://github.com/0131ryu/engWord",
+        category: ["vue", "OpenApi", "Node.js"],
+        key_techs: ["Vue", "Node.js", "OpenApi"],
+    },
+    {
+        id: 5,
+        name: "세계 날씨 찾기",
+        description:
+          "openWeather API 사용해 각 도시별 날씨 확인",
+        image_path: "/images/weather_vue.png",
+        deployed_url: "",
+        github_url: "https://github.com/0131ryu/schedule-management",
+        category: ["vue", "OpenApi",  "Node.js"],
+        key_techs: ["Vue", "Node.js", "OpenApi"],
+    }
 ]
