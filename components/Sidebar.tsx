@@ -27,7 +27,7 @@ const Sidebar = () => {
             류지혜</h3>
             <p className="px-2 py-1 my-3 rounded-full bg-light-beige dark:bg-gray-beige dark:text-black">Web Developer</p>
             <a className="flex items-center justify-center px-2 py-1 my-3 rounded-full bg-light-beige dark:bg-gray-beige dark:text-black"
-                // href="/asset/ryujihye_resume.docx"
+                href="/asset/ryujihye.pdf"
                 download="ryujihye_resume">
                 <GrDocument className="w-6 h-6" />
                 <p>Download Resume</p>
@@ -49,7 +49,6 @@ const Sidebar = () => {
               </div>
             </div>
             <p className="my-2">131ryuji@gmail.com</p>
-            <p className="my-2">010-0000-0000</p>
             <button className="w-8/12 py-2 my-2 rounded-full bg-gradient-to-r from-dark-blue to-light-beige dark:from-dark-red dark:to-light-beige dark:text-black focus:outline-none"
                 onClick={() => window.open("mailto:131ryuji@gmail.com")}
             >Email Me</button>

@@ -3,9 +3,10 @@ import { IProject, IService, ISkill } from "./type"
 import { RiComputerLine, RiComputerFill, RiStickyNoteLine } from "react-icons/ri"
 import { MdSocialDistance, MdFolder } from 'react-icons/md'
 import { IoLogoJavascript } from "react-icons/io"
-import { IoLogoReact, IoRadioButtonOffOutline } from 'react-icons/io5'
-import { SiTailwindcss, SiMysql } from "react-icons/si"
+import { IoLogoReact } from 'react-icons/io5'
+import { SiTailwindcss, SiMysql, SiNextdotjs } from "react-icons/si"
 import { FaAws } from "react-icons/fa"
+import { AiFillGithub } from "react-icons/ai"
 
 export const services: IService[] = [
     {
@@ -43,18 +44,28 @@ export const languages:ISkill[] = [
     },
     {
         name: "react",
-        level: '60%',
+        level: '70%',
         Icon: IoLogoReact
     },
     {
+        name: "next.js",
+        level: '60%',
+        Icon: SiNextdotjs
+    },
+    {
         name: "tailwindcss",
-        level: '70%',
+        level: '60%',
         Icon: SiTailwindcss
+    },
+    {
+        name: "github",
+        level: '50%',
+        Icon: SiMysql
     },
     {
         name: "mysql",
         level: '50%',
-        Icon: SiMysql
+        Icon: AiFillGithub
     },
     {
         name: "aws",
@@ -63,23 +74,6 @@ export const languages:ISkill[] = [
     }
 ]
 
-export const tools:ISkill[] = [
-    {
-        name: "Figma",
-        level: '70%',
-        Icon: IoRadioButtonOffOutline
-    },
-    {
-        name: "Photoshop",
-        level: '60%',
-        Icon: IoRadioButtonOffOutline
-    },
-    {
-        name: "Illustrator",
-        level: '70%',
-        Icon: IoRadioButtonOffOutline
-    },
-]
 
 export const projects:IProject[] = [
     {
