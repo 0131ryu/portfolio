@@ -3,6 +3,8 @@ import { FunctionComponent, useState } from "react"
 import { AiFillGithub, AiFillProject } from 'react-icons/ai'
 import { MdClose } from 'react-icons/md'
 
+import Image from 'next/legacy/image'
+
 const ProjectCard:FunctionComponent<{
     project: IProject}> = ({project: {
         name,
@@ -19,21 +21,21 @@ const ProjectCard:FunctionComponent<{
     return (
         <>
       {/* //step 1 */}
-      {/* <Image
+      <Image
         src={image_path}
         alt={name}
         layout="responsive"
         width={300}
         height={150}
         onClick={() => setShowDetail(true)}
-        className="cursor-pointer "
-      /> */}
-      <img
+        className="cursor-pointer"
+      />
+      {/* <Image
         src={image_path}
         alt={name}         
         className="w-full h-40 rounded-lg cursor-pointer"
         onClick={() => setShowDetail(true)}
-      />
+      /> */}
 
       <p className="my-2 text-center">{name}</p>
       {/* //step 1 */}

@@ -1,7 +1,8 @@
-import Sidebar from '@/components/Sidebar'
 import '@/styles/globals.css'
 import type { AppProps } from 'next/app'
 import { ThemeProvider } from 'next-themes'
+import Navbar from '@/components/Navbar'
+import Sidebar from '@/components/Sidebar'
 
 export default function App({ Component, pageProps }: AppProps) {
   return(
@@ -11,7 +12,7 @@ export default function App({ Component, pageProps }: AppProps) {
           <Sidebar />
        </div>
        <div className='flex flex-col col-span-12 overflow-hidden bg-white rounded-2xl dark:bg-black dark:text-white lg:col-span-9 shadow-custom-light dark:shadow-custom-dark'>
-          {/* <Navbar /> */}
+          <Navbar />
           <Component {...pageProps} />
        </div>
     </div>
