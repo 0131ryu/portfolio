@@ -5,3 +5,10 @@
 body {
     background-color: #6096B4;   
 }
+::-webkit-scrollbar-thumb {
+    background-image: linear-gradient(to right bottom, #6096B4, #EEE9DA);
+}
+::-webkit-scrollbar {
+    width: 8px;
+    height: 0px;
+}

@@ -1,12 +1,19 @@
 import Bar from "@/components/Bar";
 import { languages, tools } from "@/data";
+import { motion } from "framer-motion";
+import { fadeInUp, routeAnimation } from "@/animations";
 
-const Resume = () => {
+const Resume = () => {    
     return (
-        <div className='px-6 py-2'>
+        <motion.div 
+          variants={routeAnimation}
+          initial="initial"
+          animate="animate"
+          exit="exit"
+          className='px-6 py-2'>
         {/* //! Education & Experience */}
         <div className='grid gap-6 md:grid-cols-2'>
-        <div>
+        <motion.div variants={fadeInUp} initial="initial" animate="animate">
             <h5 className='my-3 text-2xl font-bold'>Education</h5>
             <div className=''>
                 <h5 className='my-2 text-xl font-bold'>
@@ -19,8 +26,8 @@ const Resume = () => {
                     경영학과에 대한 전반적인 내용을 배움
                 </p>
             </div>
-        </div>
-        <div>
+        </motion.div>
+        <motion.div variants={fadeInUp} initial="initial" animate="animate">
             <h5 className='my-3 text-2xl font-bold'>Experience</h5>
             <div className=''>
                 <h5 className='my-2 text-xl font-bold'>
@@ -29,7 +36,7 @@ const Resume = () => {
                 <p className='font-semibold'>한국농수산식품유통공사(2018~2019)</p>
                 <p className='my-3'>I don't know why I am doing this job</p>
             </div>
-        </div>
+        </motion.div>
         </div>
 
         {/*Languages & Tools */}
@@ -52,7 +59,7 @@ const Resume = () => {
                 </div>
             </div>
         </div>
-    </div>
+    </motion.div>
     )
 }
 
