@@ -3,6 +3,8 @@ import {BsFillInfoSquareFill } from "react-icons/bs"
 import {GoLocation} from "react-icons/go"
 import {GrDocument} from "react-icons/gr"
 import { useTheme } from 'next-themes'
+
+import Image from 'next/legacy/image'
  
 const Sidebar = () => {
     const {theme, setTheme} = useTheme()
@@ -13,9 +15,13 @@ const Sidebar = () => {
     
     return (
         <div>
-            <img src="https://user-images.githubusercontent.com/89256977/221572909-d8cad08b-843b-43bb-9491-51dad05f1888.jpg"
+            <Image src="/images/profile.jpg"
              alt="profileImg"
-             className="w-40 mx-auto rounded-full h-44"/>
+             width={140}
+             height={140}
+             className="mx-auto rounded-full"
+             layout="intrinsic"
+             quality={100}/>
 
         <h3 className="my-4 font-sans text-3xl font-medium">
             류지혜</h3>

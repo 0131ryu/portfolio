@@ -14,7 +14,7 @@ const Index = () => {//{ services }: ISIndex
         a galley of type and scrambled it 
         to make a type specimen book.</h5>
       <div className="flex-grow p-4 mt-5 bg-light-beige" style={{marginLeft: '-1.5rem', marginRight: '-1.5rem'}}>
-        <h6 className="my-3 font-bold tracking-wide text-ml">What I Offer</h6>
+        <h6 className="my-3 font-bold tracking-wide text-ml dark:text-black">What I Offer</h6>
         <div className="grid gap-6 lg:grid-cols-2">
        {/* {Object.keys(services).map(function(key) {
          console.log(services)
@@ -22,7 +22,7 @@ const Index = () => {//{ services }: ISIndex
        })} */}
         {services.map(service => (
                   <div
-                     className='col-span-2 p-2 bg-white rounded-lg lg:col-span-1 '
+                     className='col-span-2 p-2 bg-white rounded-lg dark:bg-black lg:col-span-1 '
                      key={service.title}>
                      <ServiceCard service={service} />
                   </div>

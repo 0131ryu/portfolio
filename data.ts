@@ -87,7 +87,7 @@ export const projects:IProject[] = [
         name: "engWord 단어장 v.3",
         description:
           "단어장, sns, game이 가능한 웹 페이지",
-        image_path: "/images/engWord_next.png",
+        image_path: "/images/engword_next.png",
         deployed_url: "https://engword.shop/",
         github_url: "https://github.com/0131ryu/engWord_next",
         category: ["react", "Node.js", "OpenApi"],
