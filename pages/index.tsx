@@ -1,11 +1,12 @@
-// import { GetServerSideProps } from "next";
+import { GetServerSideProps } from "next";
 // import { ISIndex } from "@/type";
 import { services } from "@/data";
 import ServiceCard from "@/components/ServiceCard";
 import { motion } from "framer-motion";
 import { fadeInUp, routeAnimation, stagger } from "@/animations";
+import Head from "next/head";
 
-const Index = () => {//{ services }: ISIndex
+const Index = () => {
   return (
     <motion.div 
       variants={routeAnimation}
@@ -13,6 +14,11 @@ const Index = () => {//{ services }: ISIndex
       animate="animate"
       exit="exit"
       className="flex flex-col flex-grow px-6 pt-1">
+      
+      <Head>
+        <title>Web Developer | Portfolio</title>
+      </Head>
+      
       <h5 className="my-3 font-medium">Lorem Ipsum is simply dummy text 
         of the printing and typesetting industry. 
         Lorem Ipsum has been the industry's standard 
@@ -45,14 +51,15 @@ const Index = () => {//{ services }: ISIndex
 
 export default Index;
 
-// export const getServerSideProps = async (context:GetServerSideProps) => {
-//   const res = await fetch('http://localhost:3000/api/services')
-//   const data = await res.json();
-//   console.log("data.type", typeof data)
+export const getServerSideProps = async (context:GetServerSideProps) => {
+  
+  console.log(process.env.VERCEL_URL)
+  // const res = await fetch(`${process.env.VERCEL_URL}/api/services`)
+  // const data = await res.json();
 
-//   return {
-//     props: {
-//       services: data.services,
-//     }
-//   }
-// }
+  return {
+    props: {
+      endpoint: process.env.VERCEL_URL,
+    }
+  }
+}

@@ -35,10 +35,10 @@ const Sidebar = () => {
             {/* icons */}
             <div className="flex items-center w-9/12 my-5 justify-evenly text-light-blue dark:text-dark-red md:w-full ml-14 md:ml-3 lg:ml-0">
                 <a href="https://github.com/0131ryu">
-                    <AiFillGithub  className="w-8 h-8 cursor-pointer"/>
+                    <AiFillGithub  className="w-8 h-8 cursor-pointer" aria-label="Github"/>
                 </a>
                 <a href="https://velog.io/@131ryuji">
-                <BsFillInfoSquareFill  className="w-8 h-8 cursor-pointer"/>
+                <BsFillInfoSquareFill  className="w-8 h-8 cursor-pointer" aria-label="Blog"/>
                 </a>
             </div>
             {/* address */}
