@@ -26,12 +26,16 @@ const Navbar = () => {
         if(pathname === "/") {
             setActiveItem('About')  
         }
+        if(pathname === "/main") {
+            setActiveItem('EngWord')  
+        }
         if(pathname === "/projects") {
             setActiveItem('Projects')  
         }
         if(pathname === "/resume") {
             setActiveItem('Resume')  
         }
+        
     }, [])
 
     return (
@@ -39,6 +43,7 @@ const Navbar = () => {
             <span className="ml-5 text-xl font-bold border-b-4 text-dark-blue md:text-2xl">{activeItem}</span>         
             <div className="text-lg">
             <NavItem activeItem={activeItem} setActiveItem={setActiveItem} name="About" route="/" />
+            <NavItem activeItem={activeItem} setActiveItem={setActiveItem} name="EngWord" route="/main" />
             <NavItem activeItem={activeItem} setActiveItem={setActiveItem} name="Projects" route="/projects" />
             <NavItem activeItem={activeItem} setActiveItem={setActiveItem} name="Resume" route="/resume" />
             </div>
