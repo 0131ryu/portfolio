@@ -13,10 +13,6 @@ export interface ISkill {
     Icon: IconType
 }
 
-// export interface ISIndex {
-//     services: Object
-// }
-
 export interface IProject{
     id: number,
     name: string,
@@ -28,4 +24,15 @@ export interface IProject{
     key_techs: string[]
 }
 
-export type Category = "react" | "Node.js" | "vue" | "OpenApi"
+export type Category = "react" | "Node.js" | "vue" | "OpenApi";
+
+export interface IMain{
+    id: number,
+    name: string,
+    question: string,
+    answer: string,
+    deployed_url: string,
+    category: string[],
+}
+
+export type MainCategory = "Word" | "SNS" | "Game" | "Profile";
