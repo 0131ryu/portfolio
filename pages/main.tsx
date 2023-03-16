@@ -1,5 +1,5 @@
 import MainCard from '@/components/MainCard'
-import MainTimeLine from '@/components/mainTimeLine'
+import MainTimeLine from '@/components/MainTimeLine'
 import React, { useState } from 'react'
 import { main as mainData } from '@/data'
 
