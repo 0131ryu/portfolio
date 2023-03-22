@@ -4,6 +4,7 @@ import { motion } from "framer-motion";
 import { fadeInUp, routeAnimation } from "@/animations";
 import Head from "next/head";
 import { GoPrimitiveDot } from "react-icons/go";
+import Ball from "@/components/Ball";
 
 const Resume = () => {    
     return (
@@ -57,25 +58,17 @@ const Resume = () => {
         </motion.div>
         </div>
 
-        {/*Languages & Tools */}
         <div className='grid gap-9 md:grid-cols-1'>
         <div>
             <h5 className='my-3 text-2xl font-bold'>Language & Framework</h5>
             <div className='my-2'>
-                {languages.map((language, i) => (
-                    <Bar value={language} key={i} />
-                ))}
-            </div>
-        </div>
-
-        {/* <div>
-            <h5 className='my-3 text-2xl font-bold'>Tools & Softwares</h5>
-            <div className='my-2'>
-                {tools.map((tool, i) => (
-                    <Bar value={tool} key={i} />
+                <div className="flex grid grid-cols-4 gap-1 lg:grid-cols-7 mt-5 lg:mt-10">
+                 {languages.map((language, i) => (
+                    <Ball value={language} key={i} />
                 ))}
                 </div>
-            </div> */}
+            </div>
+        </div>
         </div>
     </motion.div>
     )
