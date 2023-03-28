@@ -16,7 +16,7 @@ export const services: IService[] = [
     },
     {
         title: "Back Skills",
-        about: "<b>Node.js</b>, <b>MySQL</b>를 사용해 웹의 <b>XAPI</b>를 만들고 구동하며 <b>AWS EC2</b>로 배포합니다.",
+        about: "<b>Node.js</b>, <b>MySQL</b>를 사용해 웹의 <b>API</b>를 만들고 구동하며 <b>AWS EC2</b>로 배포합니다.",
         Icon: RiComputerFill,
     },
     {
