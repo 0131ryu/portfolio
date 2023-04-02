@@ -10,7 +10,6 @@ const main = () => {
    <h2 className="flex px-10 text-lg font-bold lg:text-xl">프로젝트를 진행하며 &nbsp;
         <span className='text-dark-red'>마주한 문제</span>와 &nbsp;
         <span className='text-dark-blue'>해결 방법</span>
-        <button className='bg-light-beige text-xs lg:text-sm ml-3'>저는 이렇게 질문합니다!</button>
     </h2>
     <div className="flex px-10">
         <div className='w-3/6'>
