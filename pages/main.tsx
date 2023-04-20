@@ -2,12 +2,14 @@ import MainCard from '@/components/MainCard'
 import MainTimeLine from '@/components/MainTimeLine'
 import React, { useState } from 'react'
 import { main as mainData } from '@/data'
+import MainItems from '@/components/MainItems'
 
 const main = () => {
     const [mains, setMain] = useState(mainData);
   return (
    <>
-   <h2 className="flex px-10 text-lg font-bold lg:text-xl">프로젝트를 진행하며 &nbsp;
+   <MainItems/>
+   {/* <h2 className="flex px-10 text-lg font-bold lg:text-xl">프로젝트를 진행하며 &nbsp;
         <span className='text-dark-red'>마주한 문제</span>와 &nbsp;
         <span className='text-dark-blue'>해결 방법</span>
     </h2>
@@ -31,7 +33,7 @@ const main = () => {
               <MainCard main={main} />
             ))}
         </div>
-    </div>
+    </div> */}
     
    </>
   )
