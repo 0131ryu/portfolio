@@ -1,5 +1,4 @@
 import { IconType } from "react-icons"
-import { FunctionComponent } from 'react'
 
 export interface IService {
     title: string,
@@ -33,6 +32,20 @@ export interface IMain{
     answer: string,
     deployed_url: string,
     category: string[],
+}
+
+export interface IMainImages {
+    id: number,
+    name: string,
+    image_path: string,
+    description: string,
+}
+
+export interface IMainItems {
+    id: number,
+    title: string,
+    description: string,
+    Icon: IconType
 }
 
 export type MainCategory = "Word" | "SNS" | "Game" | "Profile";

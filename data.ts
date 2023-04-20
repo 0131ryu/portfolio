@@ -1,5 +1,5 @@
 
-import { IMain, IProject, IService, ISkill } from "./type"
+import { IMain, IMainImages, IMainItems, IProject, IService, ISkill } from "./type"
 import { RiComputerLine, RiComputerFill, RiStickyNoteLine } from "react-icons/ri"
 import { MdSocialDistance, MdFolder } from 'react-icons/md'
 import { IoLogoJavascript } from "react-icons/io"
@@ -7,6 +7,7 @@ import { IoLogoReact } from 'react-icons/io5'
 import { SiTailwindcss, SiMysql, SiNextdotjs } from "react-icons/si"
 import { FaAws } from "react-icons/fa"
 import { AiFillGithub } from "react-icons/ai"
+import { BsLightbulb, BsFillFolderFill, BsCardChecklist } from "react-icons/bs"
 
 export const services: IService[] = [
     {
@@ -16,7 +17,7 @@ export const services: IService[] = [
     },
     {
         title: "Back Skills",
-        about: "<b>Node.js</b>, <b>MySQL</b>를 사용해 웹의 <b>XAPI</b>를 만들고 구동하며 <b>AWS EC2</b>로 배포합니다.",
+        about: "<b>Node.js</b>, <b>MySQL</b>를 사용해 웹의 <b>API</b>를 만들고 구동하며 <b>AWS EC2</b>로 배포합니다.",
         Icon: RiComputerFill,
     },
     {
@@ -189,4 +190,52 @@ export const main:IMain[] = [
         deployed_url: "https://velog.io/@131ryuji/%EA%B8%B0%EC%A1%B4-%EB%8B%A8%EC%96%B4-%EC%84%A0%ED%83%9D-%EC%8B%9C-%EC%84%A0%ED%83%9D%EC%A7%80%EA%B0%80-%EC%A4%91%EB%B3%B5%EC%9D%B8-%EB%B6%80%EB%B6%84-%ED%95%B4%EA%B2%B05.-%EB%8B%A8%EC%96%B4-%EA%B2%8C%EC%9E%84-%EC%98%A4%EB%A5%98",
         category: ["Game"],
     },
+]
+
+export const mainImages: IMainImages[] = [
+    {
+        id: 0,
+        name: "engword 메인",
+        image_path: "/images/mainImg1.png",
+        description: "engWord 메인 화면, Word, SNS, Game 슬라이드로 설명"
+    },
+    {
+        id: 1,
+        name: "engword 단어",
+        image_path: "/images/mainImg2.png",
+        description: "개별 타입으로 단어장 생성, 외부 API(공공데이터) 연동해 단어 생성"
+    },
+    {
+        id: 2,
+        name: "engword sns",
+        image_path: "/images/mainImg3.png",
+        description: "게시글 추가(사진 포함), 검색기능 및 다른 사용자 팔로잉 및 차단 가능"
+    },  
+    {
+        id: 3,
+        name: "engword 게임",
+        image_path: "/images/mainImg4.png",
+        description: "Word를 통해 생성한 단어들 중 10개를 랜덤으로 골라 게임 진행"
+    }
+]
+
+export const mainItems: IMainItems[] = [
+    {
+        id: 1,
+        title: "기획 단계",
+        description: "이전 프로젝트와 달라진 점 & 보강할 부분들",
+        Icon: BsLightbulb
+    },
+    {
+        id: 2,
+        title: "구축 단계",
+        description: "프로젝트를 진행할 때 마주한 문제 & 해결 방법",
+        Icon: BsFillFolderFill
+    },
+    {
+        id: 3,
+        title: "결과 단계",
+        description: "프로젝트 결과로 얻게 된 것들",
+        Icon: BsCardChecklist
+    }
 ]
