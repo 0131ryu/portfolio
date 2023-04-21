@@ -46,6 +46,41 @@ export interface IMainItems {
     title: string,
     description: string,
     Icon: IconType
+    
+    section1?: string,
+    item1?: string,
+    deployed_url1?: string,
+
+    section2?: string,
+    item2?: string,
+    image_path?: string,
+    deployed_url2?: string,
+    
+    section3?: string,
+    item3?: string,
+    deployed_url3?: string,
 }
+
+export interface IMainPlans {
+    id: number,
+    title: string,
+    section1?: string,
+    section2?: string,
+    section3?: string,
+    image_path?: string,
+}
+
+export interface IMainConstructs {
+    id: number,
+    title: string,
+    description: string,
+}
+
+export interface IMainDecisions {
+    id: number,
+    title: string,
+    description: string,
+}
+
 
 export type MainCategory = "Word" | "SNS" | "Game" | "Profile";

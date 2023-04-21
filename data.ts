@@ -1,5 +1,5 @@
 
-import { IMain, IMainImages, IMainItems, IProject, IService, ISkill } from "./type"
+import { IMain,  IMainImages, IMainItems, IMainPlans, IProject, IService, ISkill } from "./type"
 import { RiComputerLine, RiComputerFill, RiStickyNoteLine } from "react-icons/ri"
 import { MdSocialDistance, MdFolder } from 'react-icons/md'
 import { IoLogoJavascript } from "react-icons/io"
@@ -224,18 +224,68 @@ export const mainItems: IMainItems[] = [
         id: 1,
         title: "기획 단계",
         description: "이전 프로젝트와 달라진 점 & 보강할 부분들",
-        Icon: BsLightbulb
+        Icon: BsLightbulb,
+
+        section1: "● 한국어기초사전 API를 가공·적용 후 단어 검색 시 한글, 영어가 나오길 원함",
+        item1: "○ axdata.js파일 응답 시 데이터 → json변환, wordLists에서 값을 보냄",
+
+        section2: "● MYSQL ERD (사진 참고)",
+        image_path: "/images/mysql.png",
+
+        section3: "● Redux 사용하여 중앙에서 상태를 한 번에 관리",
     },
     {
         id: 2,
         title: "구축 단계",
         description: "프로젝트를 진행할 때 마주한 문제 & 해결 방법",
-        Icon: BsFillFolderFill
+        Icon: BsFillFolderFill,
+
+        image_path: "/images/blog1.png",
+
+        section1: "● 공공데이터 API 적용",
+        item1: "영단어 생성할 때 외부 API(공공데이터) 이용하기",
+        deployed_url1: "https://velog.io/@131ryuji/series/%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8%EC%98%81%EB%8B%A8%EC%96%B4-SNS-%EA%B2%8C%EC%9E%84-%ED%8F%AC%ED%95%A8",
+
+        section2: "● 기존 값 불러온 후 수정",
+        item2:"[수정]버튼을 누르면 input에서 textarea로 전환, props를 기존 값, 수정에 필요한 함수, 수정모드 등을 props로 전달",
+        deployed_url2: "https://velog.io/@131ryuji/%EB%8B%89%EB%84%A4%EC%9E%84-%EB%B3%80%EA%B2%BD-%EA%B2%8C%EC%8B%9C%EA%B8%80-%EC%A2%8B%EC%95%84%EC%9A%94-%EA%B2%8C%EC%8B%9C%EA%B8%80-%EC%88%98%EC%A0%95-%EA%B2%8C%EC%8B%9C%EA%B8%80-%EC%82%AD%EC%A0%9C",
+
+        section3: "● 랜덤 단어게임 시 중복 영어단어 생성",
+        item3: "Set을 이용해 Set 내 값은 유일한 것이란 특징 이용, 답안으로 선택된 영어단어 1개와 나머지 3개의 영어단어가 겹치지 않고, 동시에 한글 단어가 겹치지 않도록 함",
+        deployed_url3: "https://velog.io/@131ryuji/%EA%B8%B0%EC%A1%B4-%EB%8B%A8%EC%96%B4-%EC%84%A0%ED%83%9D-%EC%8B%9C-%EC%84%A0%ED%83%9D%EC%A7%80%EA%B0%80-%EC%A4%91%EB%B3%B5%EC%9D%B8-%EB%B6%80%EB%B6%84-%ED%95%B4%EA%B2%B05.-%EB%8B%A8%EC%96%B4-%EA%B2%8C%EC%9E%84-%EC%98%A4%EB%A5%98",
     },
     {
         id: 3,
         title: "결과 단계",
+        image_path: "/images/resultImg.png",
         description: "프로젝트 결과로 얻게 된 것들",
-        Icon: BsCardChecklist
+        Icon: BsCardChecklist,
+
+        section1: "● React, Next.js, Redux, Node.js로 프로젝트 구현",
+        section2: "● 기존 프로젝트에서 여러 기능을 추가",
+        section3: "● 배포 후 이미지 파일 크기 감소(lambda) 및 SSR 적용으로 로딩 시간 2초 감소"
+    }
+]
+
+export const mainPlans:IMainPlans[] = [
+    {
+        id: 1,
+        title: "보강하려는 내용",
+        section1: "영단어 생성할 때 외부 API(공공데이터) 이용하기",
+        section2: "SNS 기능 팔로잉, 언팔로잉, 차단, 검색기능 추가",
+        section3: "Word에서 만든 영어단어를 랜덤 10개로 지정, 게임 진행"
+    },
+    {
+        id: 2,
+        title: "MYSQL ERD",
+        section1: "users를 통해 words, posts, games를 뼈대로 두고 진행",
+        image_path: "/images/mysql.png"
+    },
+    {
+        id: 3,
+        title: "프로젝트 완성 시 기대효과",
+        section1: "Redux 사용하여 중앙에서 상태를 한 번에 관리",
+        section2: "외부 API 사용을 통해 API 사용 방법 익힘",
+        section3: "기존에 만든 SNS에 여러 기능 추가 및 Game을 통해 Word로 만든 데이터가 이용되게 함"
     }
 ]
