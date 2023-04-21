@@ -27,7 +27,6 @@ const dotSlide = (slideIndex: number) => {
 
   return (
     <>
-    {console.log("showIndex", showIndex)}
     <div className='max-w-[600px] h-[350px] w-full m-auto relative grid place-items-center relative group'> 
       <Image 
         className="w-full h-full bg-center bg-cover rounded-2xl" 

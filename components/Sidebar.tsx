@@ -27,7 +27,8 @@ const Sidebar = () => {
             류지혜</h3>
             <p className="px-2 py-1 my-3 rounded-full bg-light-beige dark:bg-gray-beige dark:text-black">Web Developer</p>
             <a className="flex items-center justify-center px-2 py-1 my-3 rounded-full bg-light-beige dark:bg-gray-beige dark:text-black"
-                href="https://www.notion.so/78764fd96788426f92ee18b2c781673c" target='_blank'>
+                href="https://oxidized-buttercup-c6d.notion.site/78764fd96788426f92ee18b2c781673c"
+                download="ryujihye_resume">
                 <GrDocument className="w-6 h-6" />
                 <p>Notion 이력서</p>
             </a>

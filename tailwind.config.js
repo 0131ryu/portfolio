@@ -28,6 +28,11 @@ module.exports = {
       fontFamily: {
         sans: ["Source Sans Pro"],
       },
+      spacing: {
+        sm: "305px",
+        md: "729px",
+        lg: "1024px",
+      },
     },
     boxShadow: {
       "custom-light": " 0 0 10px #313131",
