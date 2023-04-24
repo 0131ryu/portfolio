@@ -44,7 +44,7 @@ const Projects = () => {
          variants={stagger} initial="initial" animate="animate">
             {projects.map((project) => (
                 <motion.div 
-                    className="col-span-12 p-2 border-4 rounded-lg sm:col-span-6 lg:col-span-4 border-gray-blue"
+                    className="col-span-12 p-2 border-4 rounded-lg sm:col-span-6 lg:col-span-4 border-gray-blue dark:border-light-beige"
                     variants={fadeInUp}
                     key={project.name}>
                     <ProjectCard project={project} showDetail={showDetail} setShowDetail={setShowDetail} />

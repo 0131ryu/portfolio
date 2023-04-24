@@ -29,7 +29,7 @@ const Index = () => {
             고민과 끈기</span>를 갖고 <span className="font-bold text-dark-blue dark:text-dark-red">프로젝트를 만들어내는 경험</span>이 있습니다.
           </p>
       <div className="flex-grow p-4 mt-5 bg-light-beige" style={{marginLeft: '-1.5rem', marginRight: '-1.5rem'}}>
-        <h6 className="my-3 font-bold tracking-wide text-ml dark:text-black">What I Offer</h6>
+        <h6 className="my-3 text-lg font-bold tracking-wide text-dark-blue dark:text-dark-red">What I Offer</h6>
         <motion.div 
         className="grid gap-6 lg:grid-cols-2" 
         variants={stagger} initial="initial" animate="animate">
