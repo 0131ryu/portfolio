@@ -57,11 +57,11 @@ console.log("mainImages[showIndex].image_path",mainImages[showIndex].image_path)
                    <motion.div 
                        variants={fadeInUp}
                        className="grid items-center justify-center w-2/3 rounded-lg">
-
+                    <a href={item.deployed_url1} target='_blank'>
                     <Image src={item.image_path} alt={item.image_path}  
                       width={500} height={400} 
                       className={`rounded-lg ${item.id === 2 ? 'cursor-pointer' : null}`}/>
-                       
+                    </a>   
                      </motion.div>
                      <div className='grid items-center justify-center w-1/2 pl-2'>
                      <motion.h2 variants={fadeInUp} className="mt-20 text-xl font-bold md:text-2xl text-dark-blue dark:text-dark-red">
