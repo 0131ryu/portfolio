@@ -21,7 +21,7 @@ const Index = () => {
       
       <h5 className="my-3 text-lg font-bold lg:text-xl">
         <span>만들어 본 것을 다시 고민하는 개발자, </span> 
-          <span className="text-dark-red">류지혜</span>
+          <span className="text-dark-red dark:text-dark-blue">류지혜</span>
         </h5>
           <p><span className="font-bold">영단어 학습</span><a href="https://engword.shop" className="text-dark-blue">(https://engword.shop)</a>이란 주제로 <span className="font-bold">총 3번(v.1 ~ v.3)</span>에 걸쳐,
             프론트와 백엔드 부분을 고민하면서 웹 프로젝트를 만들었습니다. 같은 주제의 프로젝트를 고민하면서, 

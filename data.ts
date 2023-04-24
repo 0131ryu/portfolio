@@ -1,5 +1,5 @@
 
-import { IMain,  IMainImages, IMainItems, IMainPlans, IProject, IService, ISkill } from "./type"
+import { IMain,  IMainImages, IMainItems, IProject, IService, ISkill } from "./type"
 import { RiComputerLine, RiComputerFill, RiStickyNoteLine } from "react-icons/ri"
 import { MdSocialDistance, MdFolder } from 'react-icons/md'
 import { IoLogoJavascript } from "react-icons/io"
@@ -264,28 +264,5 @@ export const mainItems: IMainItems[] = [
         section1: "● React, Next.js, Redux, Node.js로 프로젝트 구현",
         section2: "● 기존 프로젝트에서 여러 기능을 추가",
         section3: "● 배포 후 이미지 파일 크기 감소(lambda) 및 SSR 적용으로 로딩 시간 2초 감소"
-    }
-]
-
-export const mainPlans:IMainPlans[] = [
-    {
-        id: 1,
-        title: "보강하려는 내용",
-        section1: "영단어 생성할 때 외부 API(공공데이터) 이용하기",
-        section2: "SNS 기능 팔로잉, 언팔로잉, 차단, 검색기능 추가",
-        section3: "Word에서 만든 영어단어를 랜덤 10개로 지정, 게임 진행"
-    },
-    {
-        id: 2,
-        title: "MYSQL ERD",
-        section1: "users를 통해 words, posts, games를 뼈대로 두고 진행",
-        image_path: "/images/mysql.png"
-    },
-    {
-        id: 3,
-        title: "프로젝트 완성 시 기대효과",
-        section1: "Redux 사용하여 중앙에서 상태를 한 번에 관리",
-        section2: "외부 API 사용을 통해 API 사용 방법 익힘",
-        section3: "기존에 만든 SNS에 여러 기능 추가 및 Game을 통해 Word로 만든 데이터가 이용되게 함"
     }
 ]
