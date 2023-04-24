@@ -1,4 +1,3 @@
-import Bar from "@/components/Bar";
 import { languages } from "@/data";
 import { motion } from "framer-motion";
 import { fadeInUp, routeAnimation } from "@/animations";
@@ -19,8 +18,8 @@ const Resume = () => {
         </Head>
         <div className='grid gap-6 md:grid-cols-2'>
         <motion.div variants={fadeInUp} initial="initial" animate="animate">
-            <h5 className='my-3 text-2xl font-bold'>Education</h5>
-            <div className=''>
+            <h5 className='my-3 text-2xl font-bold text-dark-blue dark:text-dark-red'>Education</h5>
+            <div>
                 <h5 className='my-2 text-xl font-bold'>
                     경영학과
                 </h5>
@@ -33,7 +32,7 @@ const Resume = () => {
             </div>
         </motion.div>
         <motion.div variants={fadeInUp} initial="initial" animate="animate">
-            <h5 className='my-3 text-2xl font-bold'>Experience</h5>
+            <h5 className='my-3 text-2xl font-bold text-dark-blue dark:text-dark-red'>Experience</h5>
             <div className=''>
                 <h5 className='flex my-2 text-xl font-bold'>
                     <GoPrimitiveDot />
@@ -60,9 +59,9 @@ const Resume = () => {
 
         <div className='grid gap-9 md:grid-cols-1'>
         <div>
-            <h5 className='my-3 text-2xl font-bold'>Language & Framework</h5>
+            <h5 className='my-3 text-2xl font-bold text-dark-blue dark:text-dark-red'>Language & Framework</h5>
             <div className='my-2'>
-                <div className="flex grid grid-cols-4 gap-1 lg:grid-cols-7 mt-5 lg:mt-10">
+                <div className="flex grid grid-cols-4 gap-1 mt-5 lg:grid-cols-7 lg:mt-10">
                  {languages.map((language, i) => (
                     <Ball value={language} key={i} />
                 ))}

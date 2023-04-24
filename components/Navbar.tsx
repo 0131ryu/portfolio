@@ -15,7 +15,7 @@ const Navbar = () => {
     }> =  ({activeItem, setActiveItem, name, route}) => {
         return (
             activeItem !== name ? (
-                <Link href={route} className="m-1 hover:text-dark-blue">
+                <Link href={route} className="m-1 hover:text-dark-blue hover:dark:text-dark-red">
                     <span onClick={() => setActiveItem(name)}>{name}</span>
                 </Link>
         ) : null
@@ -40,7 +40,7 @@ const Navbar = () => {
 
     return (
         <div className="flex justify-between my-3 px-5py-3">
-            <span className="ml-5 text-xl font-bold border-b-4 text-dark-blue md:text-2xl">{activeItem}</span>         
+            <span className="ml-5 text-xl font-bold border-b-4 text-dark-blue dark:text-dark-red md:text-2xl">{activeItem}</span>         
             <div className="text-lg">
             <NavItem activeItem={activeItem} setActiveItem={setActiveItem} name="About" route="/" />
             <NavItem activeItem={activeItem} setActiveItem={setActiveItem} name="Main Project" route="/main" />

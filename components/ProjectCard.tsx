@@ -51,13 +51,13 @@ const ProjectCard:FunctionComponent<{
               className="flex justify-center my-4 space-x-3">
               <a
                 href={github_url}
-                className="flex items-center px-4 py-2 space-x-3 text-lg rounded-sm bg-gray-blue dark:bg-black-500 "
+                className="flex items-center px-4 py-2 space-x-3 text-lg rounded-sm bg-gray-blue dark:bg-dark-red dark:text-black"
               >
                 <AiFillGithub /> <span>Github</span>
               </a>
               <a
                 href={deployed_url}
-                className="flex items-center px-4 py-2 space-x-3 text-lg rounded-sm bg-gray-blue dark:bg-black-500"
+                className="flex items-center px-4 py-2 space-x-3 text-lg rounded-sm bg-gray-blue dark:bg-dark-red dark:text-black"
               >
                 <AiFillProject /> <span>Project</span>
               </a>
@@ -72,7 +72,7 @@ const ProjectCard:FunctionComponent<{
               {key_techs.map((value, i) => (
                 <span
                   key={i}
-                  className="p-1 px-2 my-1 rounded-sm bg-gray-blue dark:bg-black-500"
+                  className="p-1 px-2 my-1 rounded-sm bg-gray-blue dark:bg-dark-red dark:text-black"
                 >
                   {value}
                 </span>
@@ -81,7 +81,7 @@ const ProjectCard:FunctionComponent<{
           </motion.div>
 
           <button
-            className="absolute p-1 rounded-full bg-gray-blue top-3 right-3 focus:outline-none dark:bg-black-200"
+            className="absolute p-1 rounded-full bg-gray-blue top-3 right-3 focus:outline-none dark:bg-dark-red dark:text-black"
             onClick={() => setShowDetail(null)}
           >
             <MdClose size={30} />
