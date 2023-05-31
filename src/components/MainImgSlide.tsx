@@ -68,11 +68,11 @@ const clickClose = useCallback((event: object) => {
                     </a>   
                      </motion.div>
                      <div className='grid items-center justify-center w-1/2 pl-2'>
-                     <motion.h2 variants={fadeInUp} className="mt-20 text-xl font-bold md:text-2xl text-dark-blue dark:text-dark-red">
-                       {item.title}</motion.h2>
+                     <motion.h3 variants={fadeInUp} className="grid items-center justify-center mt-10 text-base font-bold lg:text-2xl text-dark-blue dark:text-dark-red">
+                       {item.title}</motion.h3>
                      {item.id === 2 && (<div className="text-sm font-bold text-dark-red dark:text-dark-blue">
                        이미지 클릭 시 블로그로 넘어갑니다.</div>)}
-                     <motion.h3 variants={fadeInUp} className="mb-20 text-base font-bold">
+                     <motion.h3 variants={fadeInUp} className="text-sm font-bold lg:text-base lg:mb-20">
                      <p className="text-black dark:text-white">
                        <a href={item.deployed_url1}>
                          {item.section1}
