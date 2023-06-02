@@ -3,7 +3,6 @@ import {BsFillInfoSquareFill } from "react-icons/bs"
 import {GoLocation} from "react-icons/go"
 import {GrDocument} from "react-icons/gr"
 import React, { FunctionComponent } from "react";
-
  
 const Sidebar:FunctionComponent<{
     darkMode: boolean;

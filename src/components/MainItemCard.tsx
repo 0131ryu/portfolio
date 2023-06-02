@@ -13,7 +13,6 @@ const MainItemCard:FunctionComponent<{
       setShowDetail(itemId);
       setSwitchImgs(true);
     }, [setShowDetail, setSwitchImgs])
-
     return (
       <>
       {/* 3개의 단계 보여주기 */}
